@@ -1,0 +1,134 @@
+@media(max-width:600px){
+    p{
+        font-size: 14px;
+    }
+}
+
+@media(min-width:400){
+    p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-resolution: 2dppx) {
+    .grid-item {
+      font-size: calc(1rem + 1vw);
+    }
+  }
+
+  header{
+    text-align: center;
+    font-style: oblique;
+    background-color: rgb(16, 44, 203);
+    padding: 5px;
+    border: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(255, 255, 255); 
+    margin: 0;
+    padding: 0;
+  }
+
+h1{
+    text-align: right;
+    margin: 20px 0;
+    font-size: 3rem;
+    color: #020224;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  #perfil{
+    text-align: center;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.3s;
+    position: relative;
+    border: 4px solid transparent;
+    overflow: hidden;
+  }
+
+  .grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    border: 4px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .grid-item h2 {
+    margin-top: 15px;
+    color: #000002;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .grid-item p {
+    margin: 10px 0;
+    color: #201010;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .competencias{
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    border: 4px solid transparent;
+    overflow: hidden;
+  }
+
+  .contacto{
+    text-align: center;
+  }
+
+  .perfil:nth-child(1){
+    grid-column: 1/3;
+    height:200px;
+    max-width: 1000px;
+}
